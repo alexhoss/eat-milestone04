@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EAT | Log In</title>
+	<!-- Bootstrap 4 alpha CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+	<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<nav class="navbar navbar-dark">
+		<!-- Brand -->
+		<a class="navbar-brand" href="index.html"><i aria-hidden="true" class="fa fa-globe"></i> EAT</a>
+		<!-- Links -->
+		<ul class="nav navbar-nav pull-md-right">
+			<li class="nav-item">
+				<a class="nav-link" href="listview.html">All Recipes</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="login.html">Log In</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="forum.html">Forum</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- EDIT BELOW HERE -->
+	<div class="container">
+		<h1>Log in</h1>
+		<h4 class="sub-title-contact">Log in to use forum and post comments!</h4>
+        <div class="col-md-2"></div>
+	
+		<div class="container form-grp col-md-8">
+			<form onsubmit="return formValidate()" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+				<div class="form-group">
+					<label for="Email">Email address</label>
+                    <div id="emailError"></div>
+                    <input aria-describedby="emailHelp" class="form-control" id="inputEmail"  type="email">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+                    <div id="passError"></div>
+                    <input class="form-control" id="inputPassword" placeholder="" type="password">
+                    <small>Don't have an account? Register <a href="signup.html">here.</a> <br></small>
+				</div>
+                
+			<button class="btn btn-secondary" type="submit">Login</button>
+			</form>
+		</div> 
+		<div class="col-md-2"></div>
+	<div class="push"></div>
+    </div>
+	<!-- EDIT ABOVE HERE -->
+	<footer class="footer">
+		<p class="footer-logo"><i aria-hidden="true" class="fa fa-cutlery"></i></p>
+		<p class="footer-links"><a href="listview.html">All Recipes</a> &bull; <a href="login.html">Log In</a> &bull; <a href="contact.html">Contact</a> &bull; <a href="forum.html">Forum</a></p>
+		<p class="footer-group-name">Group 5 &copy; 2017</p>
+	</footer>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+	</script>
+    
+         <script>
+            function isEmail(email) {
+  
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z]{2,4}\b)+$/;
+  
+                return regex.test(email);
+                
+            }
+            
+        
+        function formValidate() {
+   
+            if (isEmail($("#inputEmail").val()) == false) {
+                $("#emailError").html("Please enter a valid email address");
+               
+            }
+             else $("#emailError").html("");
+            
+            if($("#inputPassword").val() == "") {
+                $("#passError").html("Please enter a password");
+            
+            }
+            
+            else $("#passError").html("");
+          
+            var errorMessage = $("#emailError").html() + 
+             $("#passError").html();
+             
+            if (errorMessage == "") {
+                return true;
+            }
+            else return false;
+            
+
+        
+        }
+    
+    </script>
+	
+	<!-- Tether -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js">
+	</script>
+	
+	<!-- Bootstrap 4 Alpha JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js">
+	</script> 
+	<script src="https://use.fontawesome.com/26ec5e6edd.js">
+	</script>
+
+	<!-- Initialize Bootstrap functionality -->
+	<script>
+	      // Initialize tooltip component
+	      $(function () {
+	       $('[data-toggle="tooltip"]').tooltip()
+	      })
+
+	      // Initialize popover component
+	      $(function () {
+	       $('[data-toggle="popover"]').popover()
+	      })
+	</script>
+</body>
+</html>

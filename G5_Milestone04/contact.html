@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EAT | Contact Us</title>
+	<!-- Bootstrap 4 alpha CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+	<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<nav class="navbar navbar-dark">
+		<!-- Brand -->
+		<a class="navbar-brand" href="index.html"><i aria-hidden="true" class="fa fa-globe"></i> EAT</a>
+		<!-- Links -->
+		<ul class="nav navbar-nav pull-md-right">
+			<li class="nav-item">
+				<a class="nav-link" href="listview.html">All Recipes</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="login.html">Log In</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="forum.html">Forum</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- EDIT BELOW HERE -->
+	<div class="container">
+		<h1>Contact</h1>
+		<h4 class="sub-title-contact">Have a question or a recipe you want to share? Fill out the form below!</h4>
+		<div class="col-md-2"></div>
+		<div class="container form-grp col-md-8">
+            <!-- action="http://webdevfoundations.net/scripts/formdemo.asp" -->
+			<form method="post" onsubmit="return formValidate()" id="loginForm" action="http://webdevfoundations.net/scripts/formdemo.asp">
+				<div class="form-group">
+					<label for="Email">Email address</label>
+                    <div id="emailError"></div>
+                    <input aria-describedby="emailHelp" class="form-control" id="inputEmail" placeholder="Email" type="email">
+				</div>
+				<div class="form-group">
+					<label for="Subject">Subject</label>
+                    <div id="subjectError"></div>
+                    <input class="form-control" id="inputSubject" placeholder="Subject" type="text">
+				</div>
+				<div class="form-group">
+					<label for="TextArea">Message</label>
+                    <div id="textError"></div>
+					<textarea class="form-control" id="textArea" rows="3"></textarea>
+				</div><button class="btn btn-secondary" type="submit" id="submit">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	<div class="push"></div>
+	<!-- EDIT ABOVE HERE -->
+	<footer class="footer">
+		<p class="footer-logo"><i aria-hidden="true" class="fa fa-cutlery"></i></p>
+		<p class="footer-links"><a href="listview.html">All Recipes</a> &bull; <a href="login.html">Log In</a> &bull; <a href="contact.html">Contact</a> &bull; <a href="forum.html">Forum</a></p>
+		<p class="footer-group-name">Group 5 &copy; 2017</p>
+	</footer>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+	</script>
+	
+	<!-- Tether -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js">
+	</script>
+	
+	<!-- Bootstrap 4 Alpha JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js">
+	</script> 
+	<script src="https://use.fontawesome.com/26ec5e6edd.js">
+	</script>
+
+	<!-- Initialize Bootstrap functionality -->
+	<script>
+	      // Initialize tooltip component
+	      $(function () {
+	       $('[data-toggle="tooltip"]').tooltip()
+	      })
+
+	      // Initialize popover component
+	      $(function () {
+	       $('[data-toggle="popover"]').popover()
+	      })
+	</script>
+    
+    <script>
+            function isEmail(email) {
+  
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z]{2,4}\b)+$/;
+  
+                return regex.test(email);
+                
+            }
+        
+        function formValidate() {
+   
+            if (isEmail($("#inputEmail").val()) == false) {
+                $("#emailError").html("Please enter a valid email address");
+               
+            }
+             else $("#emailError").html("");
+            
+            
+            if ($("#inputSubject").val() == "") {
+                $("#subjectError").html("Please enter a subject");
+               
+            }
+             else $("#subjectError").html("");
+            
+             if ($("#textArea").val() == "") {
+                 $("#textError").html("Please enter a message");
+                
+            }
+             else $("#textError").html("");
+            
+            var errorMessage = $("#emailError").html() + $("#subjectError").html();
+            + $("#textError").html();
+             
+            if (errorMessage == "") {
+                return true;
+            }
+            else return false;
+            
+
+        
+        }
+    
+    </script>
+</body>
+</html>

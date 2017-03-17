@@ -1,0 +1,309 @@
+/** EAT Stylesheet **/
+
+html{
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    
+    
+}
+body{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.main {
+        max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-dark {
+    background-color: #311e10;
+}
+
+.navbar-brand{
+    font-weight: 900;
+    font-size: 30px;
+    padding-left: 60px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 3.2em;
+}
+
+/** Nav Bar **/
+.nav-item {
+    font-size:20px;
+    padding-left: 10px;
+}
+
+.nav {
+    padding-right: 30px;
+    padding-top:5px;
+}
+
+.navbar-inverse{
+    color:black;
+}
+
+/** Footer styling **/
+.footer{
+	background-color: #311e10;
+	width: 100%;
+	text-align: center;
+	padding: 25px;
+	margin-top: 80px;
+}
+.footer-logo{
+	color:  #9d9083;
+	font-size: 30px;
+	margin: 0;
+}
+
+ .footer-group-name{
+	color:  #9f9286;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+/** Recipe card view page **/
+
+a.recipe-card{
+    color: black;
+}
+
+a.recipe-card:hover {
+    text-decoration:none;
+
+}
+
+.card2-row {
+    padding-top: 40px;
+}
+.card3-row{
+    padding-top: 40px;
+}
+
+/** Animation to grow card on hover **/
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+
+
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.03);
+}
+
+/** Contact Page **/
+
+#subjectError{
+    display:block;
+    color:red;
+}
+
+#textError{
+    display:block;
+    color: red;
+}
+
+#emailError{
+    display:block;
+    color:red;
+}
+
+#passError{
+    display:block;
+    color:red;
+}
+#userError{
+    display:block;
+    color:red;
+}
+
+.sub-title-contact {
+    text-align: center;
+}
+
+.form-grp {
+    border: 2px solid #d9d9d9;
+    border-radius:5px;
+    padding:30px;
+    margin-top:40px;
+}
+
+#textArea{
+    resize: none;
+}
+.push {
+    height:84px;
+}
+
+/* List View Page styling */
+
+.recipe-list{
+	border: 1px solid;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+
+}
+
+.recipe-list-center{
+	border: 1px solid;
+	padding: 20px;
+	text-align: center;
+    margin: 20px;
+}
+
+.list-view-header{
+	text-align: center;
+}
+
+li{ text-align:left;
+}
+
+.continent-list-header{
+    text-decoration: underline;
+    font-size:20px;
+}
+a.list-link:hover {
+
+    color:black;
+
+}
+a.list-link{
+    color: #292c2f;
+}
+
+/* End of List View CSS*/
+
+
+
+/* Recipe Page CSS */
+.ingredients{
+    padding-top: 10px;
+    float: left;
+}
+
+.directions{
+    padding-top: 10px;
+    float: left;
+}
+
+
+.hr{clear:both}
+
+
+li {
+    font-size: 120%
+}
+
+.recipe-page-header{
+    text-align: center;
+}
+
+.jt-vertical-center {
+  margin: 20px auto;
+    width: 500px;
+}
+
+.list-inline{
+    text-align: center;
+
+}
+
+li.list-inline-item{
+    padding-right:10px;
+}
+
+.recipe-directions{
+    border:1px solid;
+    padding-top:10px;
+    text-align: center;
+    margin:20px;
+}
+
+.recipe-ingredients{
+    border: 1px solid;
+    text-align:center;
+    padding-top:10px;
+    margin:20px;
+}
+
+.comment-header{
+
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+.comment-box{
+    border: 1px solid;
+    margin-top: 50px;
+    height: 100px
+}
+
+.user-id{
+    font-weight: 400;
+}
+
+.comments{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.recipe-header {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+
+}
+
+.recipe-page-header {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+/** Forum post style **/
+
+.forum-sub {
+    text-align: center;
+    padding-top:20px;
+}
+.title-comment-box{
+    border: 1px solid;
+    margin-top: 20px;
+    height: 100px;
+    margin-bottom: 40px;
+
+}
