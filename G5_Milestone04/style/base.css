@@ -37,6 +37,16 @@ h1{
     font-size: 3.2em;
 }
 
+/** Slide Show **/
+.mySlides{
+    display:none
+}
+
+.brown{
+    color: #fff;
+    background-color: #311e10
+}
+
 /** Nav Bar **/
 .nav-item {
     font-size:20px;

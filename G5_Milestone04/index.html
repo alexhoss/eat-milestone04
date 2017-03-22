@@ -7,8 +7,9 @@
 	<!-- Custom Fonts -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 	<link href="style/base.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 </head>
 <body>
     <!-- Main Navigation -->
@@ -32,6 +33,27 @@
 		</ul>
 	</nav>
 	<!-- EDIT BELOW HERE -->
+
+	<div class="container">
+		<h1>Slogan or something</h1>
+	</div>
+
+	<div class="w3-content" style="max-width:800px">
+	  <img class="mySlides" src="images/fill.png" style="width:100%">
+	  <img class="mySlides" src="images/fill.png" style="width:100%">
+	  <img class="mySlides" src="images/fill.png" style="width:100%">
+	</div>
+
+	<div class="w3-center">
+	  <div class="w3-section">
+	    <button class="w3-button" onclick="plusDivs(-1)">&lang; Prev</button>
+	    <button class="w3-button" onclick="plusDivs(1)">Next &rang;</button>
+	  </div>
+	  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+	  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+	  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+	</div>
+
 	<div class="container">
 	   	<h1> To do with JS</h1>
         <h4> Temp Links: </h4>
@@ -41,12 +63,8 @@
                 <li> <a href="asia/index.html">Asia</a></li>
                 <li> <a href="antarctica/index.html">Antarctica</a></li>
                 <li> <a href="africa/index.html">Africa</a></li>
-                <li> <a href="australia/index.html">Australia</a></li>
-                
-            
-            
+                <li> <a href="australia/index.html">Australia</a></li>      
             </ul>
-        
         
 	  	<img src="images/earth.jpg" width="1100" alt="earth">
 	</div>
@@ -83,6 +101,33 @@
 
 <!-- Initialize Bootstrap functionality -->
 <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" brown", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " brown";
+}
+
 // Initialize tooltip component
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
