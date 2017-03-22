@@ -12,4 +12,8 @@ Europe: Greg
 Australia: William
 Asia: Harley
 Antarctica: __
-Africa: __
+Africa: William
+
+TODO
+Index page
+Milestone docx
