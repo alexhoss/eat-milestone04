@@ -11,6 +11,9 @@ body{
     margin-right: auto;
 
 }
+#earth{
+    border: solid black 1px;
+}
 .main {
         max-width: 100%;
     margin-left: auto;
@@ -27,6 +30,9 @@ body{
     padding-left: 60px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 3px
+}
+img.map, map area{
+    outline: none;
 }
 
 h1{

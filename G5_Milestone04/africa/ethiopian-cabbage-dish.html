@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EAT | Ethiopian Cabbage Dish</title>
-	<!-- Bootstrap 4 alpha CSS -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Custom Fonts -->
+	<title>EAT | Ethiopian Cabbage Dish</title><!-- Bootstrap 4 alpha CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet"><!-- Custom Fonts -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
 	<link href="../style/base.css" rel="stylesheet" type="text/css">
@@ -12,8 +10,7 @@
 <body>
 	<nav class="navbar navbar-dark">
 		<!-- Brand -->
-		<a class="navbar-brand" href="../index.html"><i aria-hidden="true" class="fa fa-globe"></i> EAT</a>
-		<!-- Links -->
+		<a class="navbar-brand" href="../index.html"><i aria-hidden="true" class="fa fa-globe"></i> EAT</a> <!-- Links -->
 		<ul class="nav navbar-nav pull-md-right">
 			<li class="nav-item">
 				<a class="nav-link" href="../listview.html">All Recipes</a>
@@ -28,47 +25,51 @@
 				<a class="nav-link" href="../forum.html">Forum</a>
 			</li>
 		</ul>
-	</nav>
-	<!-- EDIT BELOW HERE -->
-	<h1 class="recipe-page-header"> Ethiopian Cabbage Dish</h1>
-	<div class="container">
+	</nav><!-- EDIT BELOW HERE -->
+    <div class="container ">
+	<h1 class="recipe-page-header">Ethiopian Cabbage Dish</h1>
+	<div class="container main">
 		<div class="container">
-			<div class="row"><img class="recipe-header" src="http://placehold.it/600x200"></div>
+			<div class="row"><img class="recipe-header img-fluid" src="images/mac-and-cheese.jpg" alt="Mac and cheese"></div>
 		</div>
 		<div class="row">
 			<ul class="list-inline">
-				<li class="list-inline-item">Prep Time:mm</li>
-				<li class="list-inline-item">Cook Time:mm</li>
-				<li class="list-inline-item">Total Time:mm</li>
-				<li class="list-inline-item">Serves:m</li>
+				<li class="list-inline-item"><strong>Prep Time: 25m</strong></li>
+				<li class="list-inline-item"><strong>Cook Time: 40m</strong></li>
+				<li class="list-inline-item"><strong>Total Time: 1h5m</strong></li>
+				<li class="list-inline-item"><strong>Serves: 5</strong></li>
 			</ul>
 		</div>
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-4">
-				<div class="recipe-ingredients">
-					Ingredients
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+				<div class="ingredients-cont">
+					<h4 class="ingredients">Ingredients</h4>
+					<hr class="hr">
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>1/2 Cup Olive Oil</li>
+						<li>4 Carrots, Thinly Sliced</li>
+						<li>1 Onion, Thinly Sliced</li>
+						<li>1 Teaspoon Sea Salt</li>
+						<li>1/2 Teaspoon Ground Black Pepper</li>
+						<li>1/2 Teaspoon Ground Cumin</li>
+						<li>1/4 Teaspoon Ground Turmeric</li>
+						<li>1/2 Head Cabbage, Shredded</li>
+						<li>5 Potatoes, Peeled and Cut into 1-inch Cubes</li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="recipe-directions">
-					Directions
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+			<div class="col-md-7">
+				<div class="directions-cont">
+					<h4 class="directions">Directions</h4>
+					<hr class="hr">
+					<ol>
+						<li>Heat the olive oil in a skillet over medium heat.</li>
+						<li>Cook the carrots and onion in the hot oil about 5 minutes.</li>
+						<li>Stir in the salt, pepper, cumin, turmeric, and cabbage and cook another 15 to 20 minutes.</li>
+						<li>Add the potatoes; cover.</li>
+						<li>Reduce heat to medium-low and cook until potatoes are soft, 20 to 30 minutes.</li>
+					</ol>
 				</div>
 			</div>
 		</div>
@@ -107,7 +108,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- EDIT ABOVE HERE -->
+        </div><!-- EDIT ABOVE HERE -->
 	<footer class="footer">
 		<p class="footer-logo"><i aria-hidden="true" class="fa fa-cutlery"></i></p>
 		<p class="footer-links"><a href="../listview.html">All Recipes</a> &bull; <a href="../login.html">Log In</a> &bull; <a href="../contact.html">Contact</a> &bull; <a href="../forum.html">Forum</a></p>
@@ -115,22 +116,26 @@
 	</footer><!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
 	</script> <!-- Tether -->
+	 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js">
 	</script> <!-- Bootstrap 4 Alpha JS -->
+	 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js">
-	</script> 
+	</script> <!-- Font -->
+	 
 	<script src="https://use.fontawesome.com/26ec5e6edd.js">
 	</script> <!-- Initialize Bootstrap functionality -->
+	 
 	<script>
-	// Initialize tooltip component
-	$(function () {
-	 $('[data-toggle="tooltip"]').tooltip()
-	})
+	   // Initialize tooltip component
+	   $(function () {
+	    $('[data-toggle="tooltip"]').tooltip()
+	   })
 
-	// Initialize popover component
-	$(function () {
-	 $('[data-toggle="popover"]').popover()
-	})
+	   // Initialize popover component
+	   $(function () {
+	    $('[data-toggle="popover"]').popover()
+	   })
 	</script>
 </body>
 </html>
