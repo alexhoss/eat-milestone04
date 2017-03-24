@@ -33,8 +33,7 @@
 		</ul>
 	</nav>
 	<!-- EDIT BELOW HERE -->
-
-
+	<div class="container">
 		<h1>Welcome to Eat!</h1>
     <hr id="hrhome">
     <h3 class="titleSub">Get started by choosing a continent below</h3>
@@ -42,7 +41,6 @@
 
 
 	<div class="container">
-
 	   
 	  	<img src="images/earth.jpg" alt="Continents of earth" usemap="#continentmap" id="earth">
         
@@ -57,6 +55,7 @@
     <area alt="" title="" href="australia/index.html" shape="poly" coords="980,516,955,563,971,595,1022,583,1034,609,1044,643,1118,677,1172,633,1159,610,1105,572,1111,535,1088,484,1044,483" />
         </map>
 
+	</div>
 	</div>
 	<!-- EDIT ABOVE HERE -->
     <!-- Footer -->
@@ -91,33 +90,6 @@
 
 <!-- Initialize Bootstrap functionality -->
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" brown", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " brown";
-}
-
 // Initialize tooltip component
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -127,4 +99,5 @@ $(function () {
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
+
 </script>
