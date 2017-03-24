@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 	<link href="style/base.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="jquery.qtip.custom/jquery.qtip.css" >
 	<meta charset="utf-8">
 </head>
 <body>
@@ -44,17 +45,17 @@
 	<div class="container">
 
 	   
-	  	<img src="images/earth.jpg" alt="Continents of earth" usemap="#continentmap" id="earth">
+	  	<img src="images/earth.PNG" alt="Continents of earth" usemap="#continentmap" id="earth">
         
         <map name="continentmap">
-      
-    <area alt="" title="" href="north-america/index.html" shape="poly" coords="554,42,302,23,214,63,168,32,122,41,94,100,66,142,166,136,181,201,165,241,184,323,231,366,299,394,304,306,522,131" />
-    <area alt="" title="" href="south-america/index.html" shape="poly" coords="311,343,362,363,383,403,452,445,438,515,386,574,366,623,398,641,356,664,333,645,314,496,281,446" />
-    <area alt="" title="" href="europe/index.html" shape="poly" coords="683,131,654,115,586,164,594,201,581,213,570,186,535,212,563,235,570,251,545,259,540,286,572,289,635,304,668,261,698,226,656,190" />
-    <area alt="" title="" href="africa/index.html" shape="poly" coords="551,295,515,345,514,377,552,414,601,415,609,434,622,466,615,499,641,562,696,523,745,521,758,479,723,441,759,385,684,321,649,305" />
-    <area alt="" title="" href="asia/index.html" shape="poly" coords="662,275,681,312,760,370,786,340,812,341,849,395,870,399,883,343,914,367,924,400,914,405,939,447,983,465,1020,471,1075,470,1114,474,1100,447,1022,414,999,402,1029,391,1013,349,972,333,993,303,990,281,1024,286,1051,262,1051,219,1070,163,1076,134,1062,104,1091,74,1102,39,1070,21,998,30,924,50,893,45,864,47,853,35,795,61,770,86,705,124,664,187,691,229" />
-    <area alt="" title="" href="antarctica/index.html" shape="poly" coords="316,777,412,692,552,741,744,725,853,743,952,771,971,782" />
-    <area alt="" title="" href="australia/index.html" shape="poly" coords="980,516,955,563,971,595,1022,583,1034,609,1044,643,1118,677,1172,633,1159,610,1105,572,1111,535,1088,484,1044,483" />
+                <area alt="North America" title="North America" href="north-america/index.html" shape="poly" title="North America" coords="185,57,147,30,115,36,85,96,54,130,123,113,160,137,167,187,142,223,170,303,259,370,273,360,219,311,254,285,258,316,290,327,277,277,297,267,322,237,345,224,382,214,375,195,437,144,491,145,482,107,512,51,443,35,361,23,274,25,249,26" />
+    <area alt="South America" title="South America" href="south-america/index.html" shape="poly" coords="277,355,270,382,258,411,275,455,297,463,305,585,344,610,362,597,333,552,361,527,395,481,412,414,350,374,298,322" />
+    <area alt="Europe" title="Europe" href="europe/index.html" shape="poly" coords="601,171,599,117,589,54,554,66,568,117,551,150,541,163,550,182,537,197,520,172,492,197,514,216,521,232,502,237,500,254,500,267,531,262,558,246,570,255,570,269,597,266,609,246,630,229,641,206,603,169" />
+    <area alt="Africa" title="Africa" href="africa/index.html" shape="poly" coords="509,272,482,297,469,341,484,375,537,377,555,382,559,407,567,440,577,484,589,516,632,496,652,460,680,482,707,442,661,413,672,399,698,352,645,322,638,297,630,286,560,264" />
+    <area alt="Asia" title="Asia" href="asia/index.html" shape="poly" coords="604,261,637,270,638,284,660,321,723,321,694,296,760,315,778,357,790,372,822,314,844,343,845,366,844,381,859,406,941,432,942,390,921,365,927,316,904,250,951,264,974,222,940,146,917,122,983,149,995,87,1019,29,964,15,863,33,862,9,795,47,762,27,730,21,633,46,604,114" />
+    <area alt="Australia " title="Australia" href="australia/index.html" shape="poly" coords="911,475,888,511,891,537,940,535,963,566,970,591,1035,622,1082,572,1008,481,1000,447,1030,405,960,397,887,492" />
+    <area alt="Antarctica" title="Antarctica" href="antarctica/index.html" shape="poly" coords="281,715,349,702,380,639,387,696,463,713,514,680,669,667,788,691,885,720" />
+   
         </map>
 
 	</div>
@@ -128,3 +129,20 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 </script>
+    <script type="text/javascript" src="jquery.qtip.custom/jquery.qtip.js"></script>
+    <script>jQuery(document).ready(function (e) {
+    jQuery('area').qtip({
+        style: {
+            classes: 'qtip-dark'
+        },
+        events: {
+            show: function(event, api) {
+                api.set({
+                    'content.text': api.elements.target.attr('title')
+                });
+            }
+        
+    });
+});</script>
+    
+    </body></html>
