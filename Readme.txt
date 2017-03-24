@@ -11,7 +11,7 @@ South America: Andy
 Europe: Greg
 Australia: William
 Asia: Harley
-Antarctica: __
+Antarctica: William
 Africa: William
 
 TODO
