@@ -78,7 +78,7 @@
         
         function formValidate() {
    
-            if (isEmail($("#inputEmail").val()) == false) {
+            if (!isEmail($("#inputEmail").val())) {
                 $("#emailError").html("Please enter a valid email address");
                
             }
