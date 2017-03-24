@@ -11,8 +11,12 @@ body{
     margin-right: auto;
 
 }
+.container{
+    
+}
 #earth{
     border: solid black 1px;
+    max-width: 100%;
 }
 .main {
         max-width: 100%;
@@ -22,6 +26,9 @@ body{
 
 .navbar-dark {
     background-color: #311e10;
+}
+tooltip{
+    color:red;
 }
 
 .navbar-brand{
@@ -34,6 +41,25 @@ body{
 img.map, map area{
     outline: none;
 }
+
+#main{
+    padding-top:30px;
+    width:75%;
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+}
+
+.titleSub{
+    text-align: center;
+}
+#hrhome{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+		border-top: 1px solid #8c8b8b;
+}
+
 
 h1{
     font-family: 'Montserrat', sans-serif;
