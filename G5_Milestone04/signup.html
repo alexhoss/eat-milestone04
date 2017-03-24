@@ -111,20 +111,20 @@
         
         function formValidate() {
    
-            if (isEmail($("#inputEmail").val()) == false) {
+            if (!isEmail($("#inputEmail").val())) {
                 $("#emailError").html("Please enter a valid email address");
                
             }
              else $("#emailError").html("");
             
             
-            if (isUser($("#inputUser").val()) == false) {
+            if (!isUser($("#inputUser").val())) {
                 $("#userError").html("Please enter a valid username (4-16 characters, no symbols)");
                
             }
              else $("#userError").html("");
             
-            if(isPass($("#inputPassword").val()) == false) {
+            if(!isPass($("#inputPassword").val())) {
                 $("#passError").html("Please enter a password with at least: 8 characters, 1 symbol, 1 number");
             
             
